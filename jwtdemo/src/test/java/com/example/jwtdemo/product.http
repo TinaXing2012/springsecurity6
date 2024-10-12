@@ -1,0 +1,12 @@
+GET http://localhost:8080/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxLGpvaG5AdGVzdC5jb20sYWRtaW4iLCJpYXQiOjE3Mjg2Nzk4NDYsImV4cCI6MTcyODY4MDAyNn0.lLf6YRgVOFaJsoLfZNlyFbPT-RhDBgj778PRI_g-dig
+
+###
+POST http://localhost:8080/products
+Authorization: Basic john@test.com 12345
+Content-Type: application/json
+
+{
+  "name": "DELL",
+  "price": 299
+}

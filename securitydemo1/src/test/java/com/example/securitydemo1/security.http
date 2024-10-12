@@ -1,0 +1,19 @@
+GET http://localhost:8080/products
+Authorization: Basic edward@test.com 12345
+X-TENANT-ID:admin
+
+###
+GET http://localhost:8080/users
+Authorization: Basic edward@test.com 12345
+X-TENANT-ID:admin
+
+###
+POST http://localhost:8080/products
+Authorization: Basic edward@test.com 12345
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "HP",
+  "price": 133
+}
